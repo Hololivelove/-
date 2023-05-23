@@ -70,6 +70,16 @@ void Mob::setSPD(int newSPD)
     SPD = newSPD;
 }
 
+void Mob::state() {
+    cout << mobName << endl
+        << "HP " << HP << endl
+        << "ATK " << ATK << endl
+        << "DEF " << DEF << endl
+        << "MAG " << MAG << endl
+        << "MDEF " << MDEF << endl
+        << "SPD " << SPD << endl << endl;
+}
+
 string Mob::getmobName() const
 {
     return mobName;
