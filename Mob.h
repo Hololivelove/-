@@ -17,6 +17,7 @@ public:
 	void setMAG(int) ;
 	void setMDEF(int) ;
 	void setSPD(int) ;
+	void state();
 
     string getmobName() const;
 	int getHP() const;
