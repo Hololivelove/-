@@ -4,6 +4,164 @@
 #include"Reward.h"
 using namespace std;
 
+int FPA(Mob& player, Mob& mob) {
+	int DA = 0;
+	DA = player.getATK() - mob.getDEF();
+	if (DA < 0)DA = 0;
+	cout << "造成" << DA << "的傷害" << endl;
+	mob.setHP(mob.getHP() - DA);
+	mob.state();
+	if (mob.getHP() <= 0)return 1;
+	else {
+		DA = mob.getATK() - player.getDEF();
+		if (DA < 0)DA = 0;
+		cout << "造成" << DA << "的傷害" << endl;
+		player.setHP(player.getHP() - DA);
+		player.state();
+		if (player.getHP() <= 0)return 0;
+	}
+	return 3;
+}
+
+int LPA(Mob& player, Mob& mob) {
+	int DA = 0;
+	DA = mob.getATK() - player.getDEF();
+	if (DA < 0)DA = 0;
+	cout << "造成" << DA << "的傷害" << endl;
+	player.setHP(player.getHP() - DA);
+	player.state();
+	if (player.getHP() <= 0)return 0;
+	else {
+		DA = player.getATK() - mob.getDEF();
+		if (DA < 0)DA = 0;
+		cout << "造成" << DA << "的傷害" << endl;
+		mob.setHP(mob.getHP() - DA);
+		mob.state();
+		if (mob.getHP() <= 0)return 1;
+	}
+	return 3;
+}
+
+int FPM(Mob& player, Mob& mob) {
+	int DA = 0;
+	DA = player.getMAG() - mob.getMDEF();
+	if (DA < 0)DA = 0;
+	cout << "造成" << DA << "的傷害" << endl;
+	mob.setHP(mob.getHP() - DA);
+	mob.state();
+	if (mob.getHP() <= 0)return 1;
+	else {
+		DA = mob.getMAG() - player.getMDEF();
+		if (DA < 0)DA = 0;
+		cout << "造成" << DA << "的傷害" << endl;
+		player.setHP(player.getHP() - DA);
+		player.state();
+		if (player.getHP() <= 0)return 0;
+	}
+	return 3;
+}
+
+int LPM(Mob& player, Mob& mob) {
+	int DA = 0;
+	DA = mob.getMAG() - player.getMDEF();
+	if (DA < 0)DA = 0;
+	cout << "造成" << DA << "的傷害" << endl;
+	player.setHP(player.getHP() - DA);
+	player.state();
+	if (player.getHP() <= 0)return 0;
+	else {
+		DA = player.getMAG() - mob.getMDEF();
+		if (DA < 0)DA = 0;
+		cout << "造成" << DA << "的傷害" << endl;
+		mob.setHP(mob.getHP() - DA);
+		mob.state();
+		if (mob.getHP() <= 0)return 1;
+	}
+	return 3;
+}
+
+bool battle(Mob player, Mob mob) {
+	
+	int AM = 0;
+	while (player.getHP()>0) {
+		cout << "-----雙方數值-----" << endl;
+		mob.state();
+		cout << "------------------" << endl;
+		player.state();
+		cout << "請選擇攻擊方式\n按1物理攻擊\n按2魔法攻擊"<<endl;
+		cin >> AM;
+		if (AM == 1) {
+			if (player.getSPD() > mob.getSPD()) {
+				switch (FPA(player, mob))
+				{
+				case 1:return true;
+				case 2:return false;
+				}
+			}
+			else if (mob.getSPD() > player.getSPD()) {
+				switch (LPA(player, mob))
+				{
+				case 1:return true;
+				case 2:return false;
+				}
+			}
+			else {
+				srand(time(NULL));
+				int x = rand() % 2;
+				if (x) {
+					switch (FPA(player, mob))
+					{
+					case 1:return true;
+					case 2:return false;
+					}
+				}
+				else {
+					switch (LPA(player, mob))
+					{
+					case 1:return true;
+					case 2:return false;
+					}
+				}
+			}
+		}
+		else if (AM == 2) {
+			if (player.getSPD() > mob.getSPD()) {
+				switch (FPM(player, mob))
+				{
+				case 1:return true;
+				case 2:return false;
+				}
+			}
+			else if (mob.getSPD() > player.getSPD()) {
+				switch (LPM(player, mob))
+				{
+				case 1:return true;
+				case 2:return false;
+				}
+			}
+			else {
+				srand(time(NULL));
+				int x = rand() % 2;
+				if (x) {
+					switch (FPM(player, mob))
+					{
+					case 1:return true;
+					case 2:return false;
+					}
+				}
+				else {
+					switch (LPM(player, mob))
+					{
+					case 1:return true;
+					case 2:return false;
+					}
+				}
+			}
+		}
+		else return false;
+	}
+}
+
 int main() {
 
 	//Create player data
