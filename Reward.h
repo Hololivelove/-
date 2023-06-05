@@ -6,8 +6,8 @@ using namespace std;
 class Reward {
 public:
 	Reward();
-	Reward(string, int, int, int, int, int, int);//玩家素質
-	void setDate(int, int, int, int, int, int);//怪物素質
+	
+	void setDate(string, int, int, int, int, int, int);//怪物素質
 	void setrewardName(string);
 	string getrewardName();
 	void setIDchangeHP(int);
@@ -34,7 +34,7 @@ public:
 	int getMDchangeMAG();
 	int getMDchangeMDEF();
 	int getMDchangeSPD();
-	void random();//隨機一種能力加任一值
+	void print();
 private:
 	string rewardname;
 	int IDchangeHP;
@@ -52,4 +52,3 @@ private:
 
 };
 #endif // !l_h
-
