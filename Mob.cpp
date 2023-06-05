@@ -4,7 +4,7 @@ using namespace std;
 
 Mob::Mob()
 {
-    mobName = "? ? ?"  ;
+    mobName = "? ? ?";
     HP = 1;
     ATK = 1;
     DEF = 1;
@@ -55,7 +55,7 @@ void Mob::setDEF(int newDEF)
     DEF = newDEF;
 }
 
-void Mob::setMAG(int newMAG) 
+void Mob::setMAG(int newMAG)
 {
     MAG = newMAG;
 }
@@ -113,4 +113,24 @@ int Mob::getMDEF() const
 int Mob::getSPD() const
 {
     return SPD;
+}
+
+void Mob::copy(Mob m)
+{
+    HP =m.getHP();
+    ATK = m.getATK();
+    DEF = m.getDEF();
+    MAG = m.getMAG();
+    MDEF = m.getMDEF();
+    SPD = m.getSPD();
+}
+
+void Mob::getreward(Reward re)
+{
+    HP = HP + re.getIDchangeHP();
+    ATK = ATK + re.getIDchangeATK();
+    DEF = DEF + re.getIDchangeDEF();
+    MAG = MAG + re.getIDchangeMAG();
+    MDEF = MDEF + re.getIDchangeMDEF();
+    SPD = SPD + re.getIDchangeSPD();
 }
