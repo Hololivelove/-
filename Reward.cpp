@@ -1,4 +1,5 @@
 #include"Reward.h"
+#include"Mob.h"
 #include<string>
 #include<iostream>
 #include <stdio.h>
@@ -6,7 +7,8 @@
 #include <time.h>
 using namespace std;
 Reward::Reward() {};
-Reward::Reward(string a, int b, int c, int d, int e, int f, int g) {
+
+void  Reward::setDate(string a, int b, int c, int d, int e, int f, int g) {
 	rewardname = a;
 	IDchangeHP = b;
 	IDchangeATK = c;
@@ -14,14 +16,7 @@ Reward::Reward(string a, int b, int c, int d, int e, int f, int g) {
 	IDchangeMAG = e;
 	IDchangeMDEF = f;
 	IDchangeSPD = g;
-}
-void  Reward::setDate(int h, int i, int j, int k, int l, int m) {
-	MDchangeHP = h;
-	MDchangeATK = i;
-	MDchangeDEF = j;
-	MDchangeMAG = k;
-	MDchangeMDEF = l;
-	MDchangeSPD = m;
+	
 }
 void Reward::setrewardName(string a) {
 	rewardname = a;
@@ -101,30 +96,15 @@ int Reward::getMDchangeSPD() {
 	return MDchangeSPD;
 }
 
-void Reward::random() {
-	srand(time(NULL));
-	int min = 1;
-	int max = 6;
-	int x = rand() % (max - min + 1) + min;
-	switch (x) {
-	case 1:
-		IDchangeHP += x = rand() % (max - min + 1) + min;
-		break;
-	case 2:
-		IDchangeATK += x = rand() % (max - min + 1) + min;
-		break;
-	case 3:
-		IDchangeDEF += x = rand() % (max - min + 1) + min;
-		break;
-	case 4:
-		IDchangeMAG += x = rand() % (max - min + 1) + min;
-		break;
-	case 5:
-		IDchangeMDEF += x = rand() % (max - min + 1) + min;
-		break;
-	case 6:
-		IDchangeSPD += x = rand() % (max - min + 1) + min;
-		break;
-	}
+void Reward::print() {
+	cout << "裝備名稱: " << rewardname << endl
+		<< "生命: " << IDchangeHP << endl
+		<< "攻擊力: " << IDchangeATK << endl
+		<< "防禦力: " << IDchangeDEF << endl
+		<< "魔攻: " << IDchangeMAG << endl
+		<< "魔防: " << IDchangeMDEF << endl
+		<< "速度: " << IDchangeSPD << endl;
+		
 
 }
+
