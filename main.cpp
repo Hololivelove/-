@@ -217,6 +217,10 @@ int main() {
 	Enemymob[4].setDate("稻草人", 20, 0, 10, 0, 6, 0);
 	Enemymob[5].setDate("10", 10, 10, 10, 10, 10, 10);
 	Enemymob[6].setDate("妳妹", 10, 8, 11, 8, 11, 15);
+	Enemymob[7].setDate("雜魚", 8, 8, 8, 8, 8, 8);
+	Enemymob[8].setDate("木門", 12, 14, 8, 2, 6, 8);
+	Enemymob[9].setDate("桌子", 10, 12, 8, 0, 8, 6);
+	Enemymob[10].setDate("路過的魔王", 100, 100, 100, 100, 100, 100);
 
 	//Create leveltwomob data
 	Enemymob[11].setDate("盜賊", 15, 24, 10, 23, 10, 23);
@@ -225,6 +229,10 @@ int main() {
 	Enemymob[14].setDate("你爸", 17, 22, 11, 20, 11, 100);
 	Enemymob[15].setDate("護衛", 20, 20, 14, 20, 14, 10);
 	Enemymob[16].setDate("你奶奶", 15, 27, 14, 22, 14, 3);
+	Enemymob[17].setDate("門衛", 14, 22, 14, 16, 14, 5);
+	Enemymob[18].setDate("商人", 18, 20, 16, 18, 22, 20);
+	Enemymob[19].setDate("馬", 20, 25, 17, 18, 10, 28);
+	Enemymob[20].setDate("跌倒的魔王", 90, 90, 90, 90, 90, 90);
 
 	//Create levelthreemob data
 	Enemymob[21].setDate("聖騎士", 23, 27, 20, 23, 20, 11);
@@ -233,6 +241,10 @@ int main() {
 	Enemymob[24].setDate("史萊姆", 30, 22, 19, 31, 21, 15);
 	Enemymob[25].setDate("劍魂", 20, 30, 15, 30, 15, 25);
 	Enemymob[26].setDate("鬼魂", 16, 12, 999, 32, 15, 25);
+	Enemymob[27].setDate("半獸人", 30, 30, 18, 22, 24, 22);
+	Enemymob[28].setDate("孤兒", 10, 35, 6, 38, 4, 49);
+	Enemymob[29].setDate("樹精", 25, 24, 28, 16, 18, 10);
+	Enemymob[30].setDate("出醜的魔王", 80, 80, 80, 80, 80, 80);
 
 	//Create levelfourmob data
 	Enemymob[31].setDate("劍聖", 22, 35, 18, 22, 16, 24);
@@ -241,6 +253,10 @@ int main() {
 	Enemymob[34].setDate("烏龜", 30, 15, 25, 13, 25, 2);
 	Enemymob[35].setDate("師傅", 30, 25, 25, 25, 25, 25);
 	Enemymob[36].setDate("你爺爺", 25, 35, 23, 29, 32, 28);
+	Enemymob[37].setDate("魔功角色", 26, 20, 20, 34, 20, 26);
+	Enemymob[38].setDate("一人國國王", 30, 29, 25, 29, 48, 22);
+	Enemymob[39].setDate("暴君", 28, 36, 25, 30, 26, 28);
+	Enemymob[40].setDate("尷尬的魔王", 70, 70, 70, 70, 70, 70);
 
 	//Create levelfivemob data
 	Enemymob[41].setDate("死滅龍", 30, 24, 26, 32, 28, 27);
@@ -249,6 +265,10 @@ int main() {
 	Enemymob[44].setDate("無所不知的賢者", 35, 24, 28, 37, 30, 35);
 	Enemymob[45].setDate("詛咒之劍的寄生體", 40, 40, 22, 25, 21, 28);
 	Enemymob[46].setDate("腐壞的神劍", 50, 40, 25, 30, 25, 25);
+	Enemymob[47].setDate("精靈王", 40, 28, 26, 34, 29, 30);
+	Enemymob[48].setDate("魔神的爪牙", 30, 22, 24, 28, 26, 32);
+	Enemymob[49].setDate("孤獨的天才", 28, 30, 24, 30, 24, 28);
+	Enemymob[50].setDate("害羞的魔王", 60, 60, 60, 60, 60, 60);
 
 	//Create levelsixmob data
 	Enemymob[51].setDate("天使", 33, 33, 33, 33, 33, 33);
@@ -257,6 +277,10 @@ int main() {
 	Enemymob[54].setDate("偶像", 30, 28, 36, 39, 20, 30);
 	Enemymob[55].setDate("神獸", 50, 35, 37, 32, 37, 44);
 	Enemymob[56].setDate("吞天獸", 75, 37, 35, 29, 30, 30);
+	Enemymob[57].setDate("大地之母", 67, 31, 35, 32, 35, 28);
+	Enemymob[58].setDate("迷途的天使", 28, 35, 30, 36, 30, 34);
+	Enemymob[59].setDate("神使", 55, 33, 35, 33, 35, 38);
+	Enemymob[60].setDate("可愛的魔王", 50, 50, 50, 50, 50, 50);
 
 	//Create levelsevenmob data
 	Enemymob[61].setDate("偽神", 45, 40, 40, 45, 47, 39);
@@ -265,6 +289,10 @@ int main() {
 	Enemymob[64].setDate("魔神", 50, 38, 42, 46, 50, 45);
 	Enemymob[65].setDate("祝福之神", 42, 42, 42, 42, 42, 42);
 	Enemymob[66].setDate("死神", 45, 45, 40, 47, 40, 45);
+	Enemymob[67].setDate("戰神", 50, 43, 42, 36, 40, 42);
+	Enemymob[68].setDate("女神", 50, 40, 36, 44, 40, 40);
+	Enemymob[69].setDate("神經病", 30, 50, 32, 30, 30, 44);
+	Enemymob[70].setDate("約會中的魔王", 40, 40, 40, 40, 40, 40);
 
 	//Create leveleightmob data
 	Enemymob[71].setDate("靜", 75, 80, 0, 80, 0, 0);
@@ -273,6 +301,10 @@ int main() {
 	Enemymob[74].setDate("生日蛋糕", 100, 75, 25, 75, 25, 10);
 	Enemymob[75].setDate("星", 120, 80, 10, 30, 10, 0);
 	Enemymob[76].setDate("請用物攻打我", 100, 80, 999, 80, -100, 0);
+	Enemymob[77].setDate("請用魔攻打我", 100, 80, -100, 80, 999, 0);
+	Enemymob[78].setDate("耐心", 80, 0, 100, 0, 100, 0);
+	Enemymob[79].setDate("送你的", 1, 80, 0, 80, 0, 60);
+	Enemymob[80].setDate("接受告白的魔王", 30, 30, 30, 30, 30, 30);
 
 	//Create levelninemob data
 	Enemymob[82].setDate("黑暗根源", 68, 70, 50, 70, 55, 40);
@@ -280,14 +312,23 @@ int main() {
 	Enemymob[84].setDate("你媽", 65, 78, 65, 75, 63, 3000);
 	Enemymob[85].setDate("開學前的作業", 75, 60, 50, 80, 48, 60);
 	Enemymob[86].setDate("早上的棉被", 65, 40, 60, 65, 60, 45);
+	Enemymob[87].setDate("蟑螂", 70, 65, 50, 72, 60, 66);
+	Enemymob[88].setDate("早餐店的奶茶", 80, 62, 30, 65, 30, 37);
+	Enemymob[89].setDate("預言", 50, 60, 50, 60, 50, 39);
+	Enemymob[90].setDate("幸福的魔王",20, 20, 20, 20, 20, 20);
 
 	//Create leveltenmob data
-	Enemymob[91].setDate("6", 6, 6, 6, 6, 6, 6);
-	Enemymob[92].setDate("7", 7, 7, 7, 7, 7, 7);
-	Enemymob[93].setDate("8", 8, 8, 8, 8, 8, 8);
-	Enemymob[94].setDate("9", 9, 9, 9, 9, 9, 9);
-	Enemymob[95].setDate("0", 0, 0, 0, 0, 0, 0);
-	Enemymob[96].setDate("1", 1, 1, 1, 1, 1, 1);
+	Enemymob[91].setDate("0", 0, 0, 0, 0, 0, 0);
+	Enemymob[92].setDate("1", 1, 1, 1, 1, 1, 1);
+	Enemymob[93].setDate("2", 2, 2, 2, 2, 2, 2);
+	Enemymob[94].setDate("3", 3, 3, 3, 3, 3, 3);
+	Enemymob[95].setDate("4", 4, 4, 4, 4, 4, 4);
+	Enemymob[96].setDate("5", 5, 5, 5, 5, 5, 5);
+	Enemymob[97].setDate("6", 6, 6, 6, 6, 6, 6);
+	Enemymob[98].setDate("7", 7, 7, 7, 7, 7, 7);
+	Enemymob[99].setDate("8", 8, 8, 8, 8, 8, 8);
+	Enemymob[100].setDate("被系統控制的魔王", 100, 99, 100, 99, 100, 100);
+
 
 	Reward equipage[50]{};
 	equipage[1].setDate("破艦者", 6, 8, 5, 0, 0, -4);
@@ -330,46 +371,61 @@ int main() {
 	equipage[38].setDate("永恆的詛咒", 0,100, -100, 0, -100, -50);
 	equipage[39].setDate("終焉炮", -40, 0, -75, 100, -75, -50);
 	equipage[40].setDate("生日蛋糕", 10, 10, 10, 10, 10, 10);
+	equipage[41].setDate("debug", 999, 999, 999, 999, 999, 999);
 
 
 	int LEVEL = 0;
 	while (LEVEL < 10) {
+		int debug = 0;
+		
 		int min = 1;
 		int max = 40;
 		int x;
 		int a, b, c, m;
 		player.state();
-		x = rand() % (max - min + 1) + min;
-		cout << endl << "1號裝備" << endl;
-		equipage[x].print();
-		a = x;
-		x = rand() % (max - min + 1) + min;
-		cout << endl << "2號裝備" << endl;
-		equipage[x].print();
-		b = x;
-		x = rand() % (max - min + 1) + min;
-		cout << endl << "3號裝備" << endl;
-		equipage[x].print();
-		c = x;
-		cout << "選擇想要的裝備" << endl;
-		cin >> m;
-		while(m>3||m<1)cin >> m;
-		switch (m)
-		{
-		case 1:
-			player.getreward(equipage[a]);
-			break;
-		case 2:
-			player.getreward(equipage[b]);
-			break;
-		case 3:
-			player.getreward(equipage[c]);
-			break;
-		}
 
+		debug = rand() % 1000;
+		if (debug == 0)
+		{
+			cout << endl << "1號裝備" << endl;
+			equipage[41].print();
+			cin >> m;
+			while (m != 1)cin >> m;
+			player.getreward(equipage[41]);
+		}
+		else
+		{
+			x = rand() % (max - min + 1) + min;
+			cout << endl << "1號裝備" << endl;
+			equipage[x].print();
+			a = x;
+			x = rand() % (max - min + 1) + min;
+			cout << endl << "2號裝備" << endl;
+			equipage[x].print();
+			b = x;
+			x = rand() % (max - min + 1) + min;
+			cout << endl << "3號裝備" << endl;
+			equipage[x].print();
+			c = x;
+			cout << "選擇想要的裝備" << endl;
+			cin >> m;
+			while (m > 3 || m < 1)cin >> m;
+			switch (m)
+			{
+			case 1:
+				player.getreward(equipage[a]);
+				break;
+			case 2:
+				player.getreward(equipage[b]);
+				break;
+			case 3:
+				player.getreward(equipage[c]);
+				break;
+			}
+		}
 		
 
-		int n = rand() % 6;
+		int n = rand() % 10;
 		if(LEVEL * 10 + n + 1==81)Enemymob[81].setDate(playername, player.getSPD(), player.getMAG(), player.getMDEF(), player.getATK(), player.getDEF(), player.getHP());
 		if (battle(player, Enemymob[LEVEL * 10 + n + 1])) {
 			cout << "YOU WIN!!" << endl;
