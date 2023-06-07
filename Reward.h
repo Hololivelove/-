@@ -7,7 +7,7 @@ class Reward {
 public:
 	Reward();
 	
-	void setDate(string, int, int, int, int, int, int);//怪物素質
+	void setDate(string, int, int, int, int, int, int);
 	void setrewardName(string);
 	string getrewardName();
 	void setIDchangeHP(int);
