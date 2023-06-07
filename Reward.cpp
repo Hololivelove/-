@@ -58,43 +58,7 @@ void Reward::setIDchangeSPD(int a) {
 int Reward::getIDchangeSPD() {
 	return IDchangeSPD;
 }
-//--------MD-----------------//
-void Reward::setMDchangeHP(int a) {
-	MDchangeHP = a;
-}
-int Reward::getMDchangeHP() {
-	return MDchangeHP;
-}
-void Reward::setMDchangeATK(int a) {
-	MDchangeATK = a;
-}
-int Reward::getMDchangeATK() {
-	return MDchangeATK;
-}
-void Reward::setMDchangeDEF(int a) {
-	MDchangeDEF = a;
-}
-int Reward::getMDchangeDEF() {
-	return MDchangeDEF;
-}
-void Reward::setMDchangeMAG(int a) {
-	MDchangeMAG = a;
-}
-int Reward::getMDchangeMAG() {
-	return MDchangeMAG;
-}
-void Reward::setMDchangeMDEF(int a) {
-	MDchangeMDEF = a;
-}
-int Reward::getMDchangeMDEF() {
-	return MDchangeMDEF;
-}
-void Reward::setMDchangeSPD(int a) {
-	MDchangeSPD = a;
-}
-int Reward::getMDchangeSPD() {
-	return MDchangeSPD;
-}
+
 
 void Reward::print() {
 	cout << "裝備名稱: " << rewardname << endl
