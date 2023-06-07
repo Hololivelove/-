@@ -22,18 +22,6 @@ public:
 	int getIDchangeMAG();
 	int getIDchangeMDEF();
 	int getIDchangeSPD();
-	void setMDchangeHP(int);
-	void setMDchangeATK(int);
-	void setMDchangeDEF(int);
-	void setMDchangeMAG(int);
-	void setMDchangeMDEF(int);
-	void setMDchangeSPD(int);
-	int getMDchangeHP();
-	int getMDchangeATK();
-	int getMDchangeDEF();
-	int getMDchangeMAG();
-	int getMDchangeMDEF();
-	int getMDchangeSPD();
 	void print();
 private:
 	string rewardname;
@@ -43,12 +31,6 @@ private:
 	int IDchangeMAG;
 	int IDchangeMDEF;
 	int IDchangeSPD;
-	int MDchangeHP;
-	int MDchangeATK;
-	int MDchangeDEF;
-	int MDchangeMAG;
-	int MDchangeMDEF;
-	int MDchangeSPD;
 
 };
 #endif // !l_h
